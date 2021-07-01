@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        div#res{
+            margin-top: 20pt;
+            background: rgb(29, 61, 241);
+        }
+        body{
+            background: rgb(12, 170, 33);
+            font:normal 25pt Arial;
+        }
+        input{
+            height: 20pt;
+            width: 80pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade Brasileira ou Estrangeira</h1>
+    Qual seu país de origem?  <input type="text" name="Nac" id="Nac">
+    <input type="button" value="Verificar" onclick = "Verificar()">
+    <div id = 'res'>
+        Você é
+
+    </div>
+    <script>
+        function Verificar() {
+            let cxt = document.querySelector('input#Nac')
+            res = document.querySelector('div#res')
+            let caixa = String(cxt.value)
+            res.innerHTML = `<p>Seu país é <strong>${caixa}</srtong></p>`
+            let cor = document.querySelector('div#res')
+            if (caixa == 'Brasil'){
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+                cor.style.background = 'yellow'
+            } else {
+            res.innerHTML += `<p>Você é Estrangeiro</p>`
+            cor.style.background = 'red'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mês de nascimento usando switch</title>
+</head>
+<body>
+    <h1>Saber o mês de nascimento usando switch</h1>
+    Qual o numero correpondente ao seu mês de nascimento? <input type="number" name="mes" id="mes">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id = 'res'></div>
+    <script>
+        function Verificar(){
+            let caixa = document.querySelector('input#mes')
+            let n = Number(caixa.value)
+            res = document.querySelector('div#res')
+            switch (n){
+                case 1:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Janeiro</strong>`)
+                    break
+                case 2:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Fevereiro</strong>`)
+                    break
+                case 3:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Março</strong>`)
+                    break
+                case 4:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Abril</strong>`)
+                    break
+                case 5:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Maio</strong>`)
+                    break
+                case 6:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Junho</strong>`)
+                    break
+                case 7:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Julho</strong>`)
+                    break
+                case 8:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Agosto</strong>`)
+                    break
+                case 9:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Setembro</strong>`)
+                    break
+                case 10:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Outubro</strong>`)
+                    break
+                case 11:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Novembro</strong>`)
+                    break
+                    case 12:
+                    res.innerHTML = (`Você nasceu no mês de <strong>Dezembro</strong>`)
+                    break
+                default:
+                    res.innerHTML = ("[ERRO] Mês inválido")
+                    break            
+            }
+        
+        }
+    </script>
+</body>
+
+</html>

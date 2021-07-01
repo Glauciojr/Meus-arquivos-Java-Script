@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PraticaDOM2</title>
+</head>
+<body>
+    <input type="number" name="c1" id="c1"> +
+    <input type="number" name="c2" id="c2">
+    <input type="button" value="Somar" onclick = Somar()>
+    <div id = 'res'>Resultado</div>
+    <script>
+        function Somar(){
+        let c1 = document.querySelector('input#c1')
+        let c2 = document.querySelector('input#c2')
+        let res = document.querySelector('div#res')
+        let n1 = Number(c1.value)
+        let n2 = Number(c2.value)
+        let soma = n1 + n2
+        res.innerHTML= (`A soma entre ${n1} e ${n2} é exatamente ${soma}`)
+    }   let corpo = document.body
+        corpo.style.background = 'blue'
+        corpo.style.color = 'white'
+        corpo.style.font = 'Italic 25pt Arial'
+        let caixa = document.querySelector('input#c1')
+        let caixa2 = document.querySelector('input#c2')
+        caixa.style.height = '25pt'
+        caixa.style.width = ' 40pt'
+        caixa2.style.height = '25pt'
+        caixa2.style.width = '40pt'
+        let divres = document.querySelector('div#res')
+        divres.style.background = "black"
+        divres.style.color = 'yellow'
+        divres.style.margintop = "10pt" // Não consegui fazer funcionar somente a margem toda
+    
+    </script>
+    
+
+
+    
+</body>
+</html>

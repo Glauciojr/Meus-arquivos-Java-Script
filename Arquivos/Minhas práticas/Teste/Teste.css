@@ -1,0 +1,14 @@
+body{
+    background: yellow;
+    font: bold 12pt arial;
+    color: black;
+}
+div{
+    background: white;
+    color: red;
+    font: italic 12pt Arial;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

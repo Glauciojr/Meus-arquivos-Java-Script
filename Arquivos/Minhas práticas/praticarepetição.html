@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros testes</title>
+</head>
+<body>
+    <H1>Teste de repetição</H1>
+    digite um numero: <input type="number" name="n" id="n">
+    <input type="button" value="Verificar" onclick = 'Verificar ()'>
+    <div id = 'teste'></div>
+      
+</body>
+<section>
+ <script>
+     function Verificar () {
+            let res = document.querySelector('div#teste')
+            let n1 =  document.querySelector('input#n')
+            let num = Number(n1.value)
+            while (num <= 6) {
+                document.write('Digite outro numero')
+                num++
+            }
+            document.write("Numero maior que 6 FIM DE TESTE")
+    }
+    </script>
+    </section> 
+</html>

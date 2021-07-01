@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Segunda prática</title>
+</head>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: italic 25pt Arial;
+        }
+        h1 {
+            color: red;
+            font: italic 50pt Verdana;
+        }
+    </style>
+<body>
+    <h1> Maiden melhor banda</h1>
+    <p>
+        Membros:<br>
+
+        Steve Harris<br>
+        Bruce Dickinson<br>
+        Dave Murray<br>
+        Adrian Smith<br>
+        Genick Gers<br>
+        Nicko M´C Brain<br>
+    </p>
+</body>
+<script>
+    alert("Bem vindo ao Maiden site")
+    confirm("Está preparado?")
+    let membros = Number(prompt("Quantos membros tem a banda?"))
+    let album = prompt("Qual o melhor álbum?")
+    document.write("<strong>Aqui vai suas respostas !</strong><br><br>")
+    document.write(`A banda tem ${membros} membros<br>`)
+    document.write(`O melhor álbum é o ${album}`)
+    let paragrafo = document.getElementsByTagName('p')[0]
+    let corpo = window.document.body
+    paragrafo.style.color = 'blue' 
+    corpo.style.background = 'dark'
+    document.write(paragrafo.innerHTML)
+    
+    
+    
+    
+    
+
+</script>
+</html>

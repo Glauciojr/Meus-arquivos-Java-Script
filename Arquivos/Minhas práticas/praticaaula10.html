@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu teste</title>
+    <style>
+        body{
+            background: rgb(238, 238, 105);
+            color: blue;
+            font:italic 20pt; 
+        }
+        div#res{
+            margin-top: 20pt;
+            font:italic 25pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txt" id="txt"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar"onclick='somar()'>
+    <div id='res'>Resultado</div>
+    <script>
+        function somar (){
+        let n1 = window.document.querySelector('input#txt')
+        let n2 = window.document.querySelector('input#txt2')
+        let res = window.document.querySelector("div#res")
+        let c1 = Number(n1.value)
+        let c2 = Number(n2.value)
+        let soma = c1 + c2
+        res.innerHTML = (`A soma entre ${c1} e ${c2} é exatamente <strong>${soma}</strong>`)
+        }
+    </script>
+</body>
+</html>

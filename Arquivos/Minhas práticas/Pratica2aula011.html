@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velocidade Máxima Permitida</title>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    Qual a sua velocidade?  <input type="number" name="Velocidade" id="Vel"> Km/h
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id = 'res' ></div>
+    <script>
+        function Verificar(){
+            let caixa = document.querySelector('input#Vel')
+            let n = (caixa.value)
+            res = document.querySelector('div#res')
+            res.innerHTML = `<p>sua velocidade é <strong>${n} K/H</strong><p>`
+            if (n > 60){
+                res.innerHTML+= `<strong>MULTADO!</strong> Você passou da velocidade permitida! `
+            } else {
+                res.innerHTML += `Use sempre o cinto de segurança e nunca dirija bebado!`
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
